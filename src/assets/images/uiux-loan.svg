@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fintechGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1220"/>
+      <stop offset="50%" stop-color="#141d33"/>
+      <stop offset="100%" stop-color="#080c16"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fb923c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#fintechGrad)"/>
+
+  <!-- Figma Canvas Tooling Bar -->
+  <rect x="0" y="0" width="800" height="42" fill="#080c14" />
+  <text x="24" y="26" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="13" font-weight="bold">❖ Figma</text>
+  <text x="90" y="26" fill="#64748b" font-family="-apple-system, sans-serif" font-size="12">/ FinTech Loan Calculator &amp; Dashboard UX</text>
+
+  <!-- Left: Interactive Dashboard Wireframe / Mockup -->
+  <g transform="translate(40, 65)">
+    <rect width="450" height="390" rx="14" fill="#0a0f1d" stroke="rgba(245, 158, 11, 0.25)" stroke-width="1.5"/>
+    <text x="30" y="40" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="16" font-weight="bold">Loan Calculator &amp; Risk Visualizer</text>
+    <text x="30" y="60" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12">Simulate loan amount, tenure, and credit score impacts</text>
+
+    <!-- Slider 1: Loan Amount -->
+    <text x="30" y="100" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="12" font-weight="600">Desired Loan Amount: <tspan fill="#f59e0b">₹15,00,000</tspan></text>
+    <rect x="30" y="115" width="390" height="8" rx="4" fill="#1e293b"/>
+    <rect x="30" y="115" width="260" height="8" rx="4" fill="url(#orangeGrad)"/>
+    <circle cx="290" cy="119" r="10" fill="#ffffff" stroke="#f59e0b" stroke-width="3"/>
+
+    <!-- Slider 2: Tenure -->
+    <text x="30" y="160" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="12" font-weight="600">Tenure (Months): <tspan fill="#f59e0b">60 Months (5 Yrs)</tspan></text>
+    <rect x="30" y="175" width="390" height="8" rx="4" fill="#1e293b"/>
+    <rect x="30" y="175" width="195" height="8" rx="4" fill="url(#orangeGrad)"/>
+    <circle cx="225" cy="179" r="10" fill="#ffffff" stroke="#f59e0b" stroke-width="3"/>
+
+    <!-- Breakdown Cards -->
+    <rect x="30" y="215" width="185" height="95" rx="8" fill="#131b2e" stroke="rgba(255,255,255,0.06)"/>
+    <text x="45" y="240" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11">Monthly EMI</text>
+    <text x="45" y="270" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="bold">₹31,138</text>
+    <text x="45" y="292" fill="#10b981" font-family="-apple-system, sans-serif" font-size="10">Interest: 9.0% p.a.</text>
+
+    <rect x="235" y="215" width="185" height="95" rx="8" fill="#131b2e" stroke="rgba(255,255,255,0.06)"/>
+    <text x="250" y="240" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11">Total Repayment</text>
+    <text x="250" y="270" fill="#f8fafc" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="bold">₹18,68,280</text>
+    <text x="250" y="292" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">Principal: ₹15L | Int: ₹3.68L</text>
+
+    <!-- Visual Donut Chart Representation -->
+    <rect x="30" y="325" width="390" height="45" rx="8" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="1"/>
+    <text x="50" y="352" fill="#10b981" font-family="-apple-system, sans-serif" font-size="12" font-weight="bold">✓ High Approval Likelihood: Debt-To-Income Ratio (34%) is Optimal</text>
+  </g>
+
+  <!-- Right: UX Research & Journey Flow -->
+  <g transform="translate(515, 65)">
+    <rect width="245" height="390" rx="14" fill="#0c1220" stroke="rgba(255,255,255,0.08)"/>
+    <text x="20" y="35" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="bold">UX Research &amp; Decisions</text>
+    
+    <!-- Step 1 -->
+    <circle cx="32" cy="75" r="12" fill="rgba(245, 158, 11, 0.2)" stroke="#f59e0b"/>
+    <text x="28" y="80" fill="#f59e0b" font-family="-apple-system, sans-serif" font-size="11" font-weight="bold">1</text>
+    <text x="54" y="73" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="11" font-weight="bold">Input Reduction</text>
+    <text x="54" y="88" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">Replaced forms with responsive sliders</text>
+
+    <!-- Step 2 -->
+    <circle cx="32" cy="140" r="12" fill="rgba(56, 189, 248, 0.2)" stroke="#38bdf8"/>
+    <text x="28" y="145" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="11" font-weight="bold">2</text>
+    <text x="54" y="138" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="11" font-weight="bold">Instant Telemetry</text>
+    <text x="54" y="153" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">Zero-latency dynamic EMI computation</text>
+
+    <!-- Step 3 -->
+    <circle cx="32" cy="205" r="12" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981"/>
+    <text x="28" y="210" fill="#10b981" font-family="-apple-system, sans-serif" font-size="11" font-weight="bold">3</text>
+    <text x="54" y="203" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="11" font-weight="bold">Transparent Breakdown</text>
+    <text x="54" y="218" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">Visualized interest vs. principal split</text>
+
+    <!-- Step 4 -->
+    <circle cx="32" cy="270" r="12" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+    <text x="28" y="275" fill="#8b5cf6" font-family="-apple-system, sans-serif" font-size="11" font-weight="bold">4</text>
+    <text x="54" y="268" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="11" font-weight="bold">Actionable Output</text>
+    <text x="54" y="283" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">Direct qualification verdict display</text>
+
+    <!-- Persona Card -->
+    <rect x="20" y="315" width="205" height="55" rx="8" fill="#141c2e"/>
+    <text x="32" y="337" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="10" font-weight="bold">Target User Persona</text>
+    <text x="32" y="354" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="9">First-time borrowers seeking quick transparency</text>
+  </g>
+</svg>

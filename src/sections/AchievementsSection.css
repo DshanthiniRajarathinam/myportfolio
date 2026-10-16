@@ -1,0 +1,254 @@
+.achievements-section {
+  position: relative;
+  padding: 48px 0;
+  background: var(--bg-secondary);
+  overflow: hidden;
+}
+
+.achievements-section .section-header {
+  margin-bottom: 24px;
+}
+
+.achievements-card-wrapper {
+  position: relative;
+  max-width: 788px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+.achievement-card {
+  padding: 28px;
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  width: 100%;
+  transition: all var(--transition-smooth);
+}
+
+.achievement-card:hover {
+  border-color: var(--border-medium);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.achievement-card-header {
+  margin-bottom: 16px;
+}
+
+.achievement-meta-badges {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.achievement-badge {
+  font-size: 0.725rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  border: 1px solid var(--border-subtle);
+}
+
+.achievement-badge.current {
+  background: rgba(203, 213, 225, 0.12);
+  color: #e2e8f0;
+  border-color: rgba(203, 213, 225, 0.35);
+}
+
+.achievement-score-pill {
+  font-size: 0.725rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  background: rgba(0, 242, 254, 0.1);
+  color: var(--accent-cyan);
+  border: 1px solid rgba(0, 242, 254, 0.28);
+}
+
+.achievement-period {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.achievement-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.25;
+  margin-bottom: 6px;
+}
+
+.achievement-issuer-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.achievement-issuer {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  font-weight: 600;
+}
+
+.achievement-issuer-tag {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.achievement-desc {
+  font-size: 0.925rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 18px;
+}
+
+/* Certificate Action Button */
+.achievement-action-row {
+  display: flex;
+  align-items: center;
+  padding-top: 4px;
+}
+
+.achievement-cert-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: rgba(0, 242, 254, 0.08);
+  border: 1px solid rgba(0, 242, 254, 0.28);
+  color: var(--accent-cyan);
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.achievement-cert-btn:hover,
+.achievement-cert-btn:active {
+   background: var(--gradient-cyan);
+  border-color: transparent;
+  color: #07090e;
+  box-shadow: 0 4px 15px rgba(0, 242, 254, 0.35);
+  transform: translateY(-1px);
+}
+
+.cert-btn-arrow {
+  opacity: 0.8;
+}
+
+/* Modal Inner */
+.cert-modal-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cert-modal-image-wrapper {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #090e1a;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.cert-modal-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cert-modal-action-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 6px 4px 0;
+}
+
+.cert-modal-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cert-modal-text strong {
+  font-size: 0.98rem;
+  color: var(--text-primary);
+}
+
+.cert-modal-text span {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.cert-modal-open-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: 8px;
+  background: rgba(0, 242, 254, 0.1);
+  border: 1px solid rgba(0, 242, 254, 0.3);
+  color: var(--accent-cyan);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.cert-modal-open-link:hover {
+  background: var(--accent-cyan);
+  color: #07090e;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .achievements-section {
+    padding: 36px 0;
+  }
+
+  .achievements-section .section-header {
+    margin-bottom: 20px;
+  }
+
+  .achievement-card {
+    padding: 20px;
+  }
+
+  .achievement-role {
+    font-size: 1.15rem;
+  }
+
+  .achievement-cert-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cert-modal-action-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cert-modal-open-link {
+    width: 100%;
+    justify-content: center;
+  }
+}

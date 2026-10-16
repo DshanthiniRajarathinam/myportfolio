@@ -1,0 +1,26 @@
+.projects-section {
+  position: relative;
+  padding: 60px 0;
+  background: var(--bg-secondary);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 390px));
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 860px) {
+  .projects-grid {
+    grid-template-columns: minmax(0, 420px);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .projects-section {
+    padding: 40px 0;
+  }
+}
