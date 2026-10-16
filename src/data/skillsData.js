@@ -105,7 +105,7 @@ export const skillsData = [
   {
     name: "UI/UX Design",
     category: "design",
-    icon: "Sparkles",
+    icon: "Palette",
     accent: "#8b5cf6",
     tagline: "User-Centered Aesthetics & Usability",
     description: "Information architecture, typography hierarchy, accessibility contrast, micro-interactions, and visual harmony."

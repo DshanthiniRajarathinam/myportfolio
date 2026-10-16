@@ -4,7 +4,6 @@ import {
   ArrowRight, 
   Mail, 
   Download, 
-  Sparkles, 
   Code2, 
   Palette 
 } from 'lucide-react';
@@ -273,8 +272,7 @@ export function HeroSection() {
 
               {/* Status Hint Badge */}
               <div className={`photo-status-badge ${showBadges ? 'revealed' : ''}`}>
-                <Sparkles size={13} className="status-sparkle" />
-                <span>{showBadges ? 'Tech Stack Active ⚡' : 'Touch photo to reveal stack ✨'}</span>
+                <span>{showBadges ? 'Tech Stack Active ⚡' : 'Touch photo to reveal stack'}</span>
               </div>
             </div>
 

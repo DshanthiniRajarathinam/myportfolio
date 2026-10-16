@@ -1,7 +1,7 @@
 import React from 'react';
 import { Modal } from '../common/Modal';
 import { Button } from '../common/Button';
-import { ExternalLink, Sparkles } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import { Github } from '../common/Icons';
 import './ProjectDetailsModal.css';
 
@@ -29,7 +29,6 @@ export function ProjectDetailsModal({ project, isOpen, onClose }) {
           />
           <div className="modal-badge-overlay">
             <span className="pill-badge">
-              <Sparkles size={12} />
               {project.badge}
             </span>
           </div>

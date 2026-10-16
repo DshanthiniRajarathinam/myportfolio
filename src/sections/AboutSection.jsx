@@ -6,8 +6,7 @@ import {
   Compass, 
   GraduationCap, 
   MapPin, 
-  Laptop,
-  Sparkles 
+  Laptop 
 } from 'lucide-react';
 import { SectionHeader } from '../components/common/SectionHeader';
 import { profileData } from '../data/profileData';
@@ -52,7 +51,6 @@ export function AboutSection() {
             <div className="about-card-content">
               {/* Top Floating Badge */}
               <div className="about-card-top-badge">
-                <Sparkles size={12} className="about-badge-sparkle" />
                 <span>MERN &amp; UI/UX</span>
               </div>
 

@@ -6,7 +6,6 @@ import {
   Copy, 
   Check, 
   MessageSquare, 
-  Sparkles, 
   ArrowUpRight 
 } from 'lucide-react';
 import { Github, Linkedin } from '../components/common/Icons';
@@ -45,7 +44,7 @@ export function ContactSection() {
           >
             <div className="contact-card-box glass-card">
               <span className="contact-status-tag">
-                <Sparkles size={13} /> Open to Work &amp; Collaborations
+                Open to Work &amp; Collaborations
               </span>
 
               <h3 className="contact-info-title">Contact Channels</h3>

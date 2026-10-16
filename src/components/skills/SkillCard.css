@@ -38,27 +38,8 @@
 .skill-card-top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 18px;
-}
-
-.skill-icon-box {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--border-subtle);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--skill-accent, var(--accent-cyan));
-  transition: transform var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast);
-}
-
-.skill-card:hover .skill-icon-box {
-  transform: scale(1.1) rotate(4deg);
-  background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 0 15px rgba(var(--skill-accent), 0.4);
+  justify-content: flex-start;
+  margin-bottom: 14px;
 }
 
 .skill-category-badge {

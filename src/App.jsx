@@ -1,5 +1,4 @@
 import React from 'react';
-import { CustomCursor } from './components/common/CustomCursor';
 import { ScrollProgress } from './components/common/ScrollProgress';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
@@ -16,9 +15,6 @@ import './App.css';
 export default function App() {
   return (
     <div className="portfolio-app">
-      {/* Interactive Custom Cursor for Desktop */}
-      <CustomCursor />
-
       {/* Viewport Scroll Progress Line */}
       <ScrollProgress />
 

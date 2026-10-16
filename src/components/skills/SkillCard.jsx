@@ -1,41 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  Atom, 
-  FileCode, 
-  Layout, 
-  Palette, 
-  Boxes, 
-  Server, 
-  Cpu, 
-  Database, 
-  Coffee, 
-  Layers, 
-  Sparkles,
-  Code2
-} from 'lucide-react';
-import { Figma } from '../common/Icons';
 import './SkillCard.css';
 
-const ICON_MAP = {
-  Atom,
-  FileCode,
-  Layout,
-  Palette,
-  Boxes,
-  Server,
-  Cpu,
-  Database,
-  Coffee,
-  Layers,
-  Figma,
-  Sparkles,
-  Code2
-};
-
 export function SkillCard({ skill, index }) {
-  const IconComponent = ICON_MAP[skill.icon] || Code2;
-
   return (
     <motion.div
       className="skill-card glass-card"
@@ -49,11 +16,8 @@ export function SkillCard({ skill, index }) {
       {/* Dynamic Hover Glow Background */}
       <div className="skill-card-glow" />
 
-      {/* Top Header Row with Icon and Category Tag */}
+      {/* Top Header Row with Category Tag */}
       <div className="skill-card-top">
-        <div className="skill-icon-box">
-          <IconComponent size={24} className="skill-icon" />
-        </div>
         <span className="skill-category-badge">{skill.category}</span>
       </div>
 

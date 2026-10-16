@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { ExternalLink, Sparkles, Info, ArrowUpRight } from 'lucide-react';
+import { ExternalLink, Info, ArrowUpRight } from 'lucide-react';
 import { Github } from '../common/Icons';
 import './ProjectCard.css';
 
@@ -109,7 +109,6 @@ export function ProjectCard({ project, onSelect, index }) {
 
           {/* Floating Category Pill */}
           <div className="project-compact-badge">
-            <Sparkles size={11} className="badge-sparkle" />
             <span>{project.badge}</span>
           </div>
         </div>

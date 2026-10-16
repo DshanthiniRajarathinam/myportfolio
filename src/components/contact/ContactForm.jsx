@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import confetti from 'canvas-confetti';
-import { Send, CheckCircle2, AlertCircle, Loader2, Sparkles, Mail, Info } from 'lucide-react';
+import { Send, CheckCircle2, AlertCircle, Loader2, Mail, Info } from 'lucide-react';
 import { profileData } from '../../data/profileData';
 import './ContactForm.css';
 
