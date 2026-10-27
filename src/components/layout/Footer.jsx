@@ -41,8 +41,7 @@ export function Footer() {
               </ul>
               <ul className="footer-nav-list">
                 <li><a href="#education">Education</a></li>
-                <li><a href="#internship">Internship</a></li>
-                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
